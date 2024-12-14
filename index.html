@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  </head>
+
+  <body>
+    <section class="landing">
+      <header class="d-flex justify-content-between align-item-center">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="logo">Mohammed</div>
+          <div class="icon" id="icon">
+            <span></span>
+            <span class="sp"></span>
+            <span></span>
+          </div>
+          <nav class="d-flex">
+            <ul id="list" style="display: none">
+              <li><a href="#services">services</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container main-container">
+        <div class="content">
+          <h1>
+            Welcome! I'm Mohamed, a specialist in digital marketing and media
+            buying.
+          </h1>
+          <p>
+            I help businesses and brands optimize their marketing campaigns and
+            boost ROI through creative strategies and well-crafted plans.
+          </p>
+          <p><strong>Ready to elevate your advertising campaigns?</strong></p>
+          <!-- WhatsApp Button -->
+          <a
+            href="https://wa.me/yourphonenumber"
+            class="whatsapp-btn"
+            target="_blank"
+            id="whatsappBtn"
+            >Contact me on WhatsApp</a
+          >
+        </div>
+      </div>
+
+      <!-- Scroll to Top Button -->
+      <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()">
+        ↑
+      </button>
+    </section>
+    <div class="services-section" id="services">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="services-container">
+          <!-- Service 1: Ad Campaign Management -->
+          <div class="service-box" id="service1">
+            <div class="icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h4>Ad Campaign Management</h4>
+            <p>
+              Create and manage campaigns on platforms like Google and Meta to
+              achieve your goals.
+            </p>
+          </div>
+
+          <!-- Service 2: Performance Analysis -->
+          <div class="service-box" id="service2">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h4>Performance Analysis</h4>
+            <p>
+              Analyze data to improve performance and reduce advertising costs.
+            </p>
+          </div>
+
+          <!-- Service 3: Marketing Strategy Design -->
+          <div class="service-box" id="service3">
+            <div class="icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h4>Marketing Strategy Design</h4>
+            <p>
+              Develop comprehensive marketing plans tailored to your business.
+            </p>
+          </div>
+
+          <!-- Service 4: Custom Advertisements -->
+          <div class="service-box" id="service4">
+            <div class="icon">
+              <i class="fas fa-ad"></i>
+            </div>
+            <h4>Custom Advertisements</h4>
+            <p>
+              Implement innovative strategies to reach your target audience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div class="portfolio-section" id="portfolio">
+      <div class="container">
+        <h2 class="text-center mb-5">My Work Portfolio</h2>
+
+        <!-- First Line of 3 Boxes -->
+        <div class="portfolio-container" id="line1">
+          <div class="work-box" id="work1">
+            <h4>Marketing Campaign to Increase Sales for an Online Store</h4>
+            <p class="goal">
+              <strong>Goal:</strong> Increase sales by 25% within 3 months.
+            </p>
+            <p class="achievement">
+              <strong>Achievement:</strong> Designed and managed a Google Ads
+              campaign that achieved a 35% sales increase with 20% lower
+              acquisition costs.
+            </p>
+          </div>
+
+          <div class="work-box" id="work2">
+            <h4>Campaign for a Tech Startup</h4>
+            <p class="goal">
+              <strong>Goal:</strong> Enhance brand awareness and engagement.
+            </p>
+            <p class="achievement">
+              <strong>Achievement:</strong> Managed a Meta Ads campaign
+              (Facebook/Instagram) that reached over 1.2 million users and
+              achieved a 15% engagement rate.
+            </p>
+          </div>
+
+          <div class="work-box" id="work3">
+            <h4>
+              Improving Campaign Performance for an Educational Services Company
+            </h4>
+            <p class="goal">
+              <strong>Goal:</strong> Reduce cost-per-click (CPC) and increase
+              conversion rates.
+            </p>
+            <p class="achievement">
+              <strong>Achievement:</strong> Lowered CPC by 30% and boosted
+              conversions by 40% through ad optimization and precise audience
+              targeting.
+            </p>
+          </div>
+        </div>
+
+        <!-- See More Button -->
+
+        <!-- Hidden Line 2 of 3 Boxes -->
+        <div class="more-works" id="line2">
+          <div class="portfolio-container">
+            <div class="work-box" id="work4">
+              <h4>
+                Comprehensive Marketing Strategy for a Local Clothing Store
+              </h4>
+              <p class="goal">
+                <strong>Goal:</strong> Drive traffic to the online store and
+                boost sales.
+              </p>
+              <p class="achievement">
+                <strong>Achievement:</strong> Executed a complete marketing
+                plan, including Google and Instagram ads, resulting in a 50%
+                increase in traffic and a 20% sales boost.
+              </p>
+            </div>
+
+            <div class="work-box" id="work5">
+              <h4>Seasonal Campaign for a Cosmetics Store</h4>
+              <p class="goal">
+                <strong>Goal:</strong> Increase sales during a promotions
+                season.
+              </p>
+              <p class="achievement">
+                <strong>Achievement:</strong> Managed a Meta Ads campaign
+                attracting over 50,000 visitors in one week and boosting sales
+                by 60% compared to the previous season.
+              </p>
+            </div>
+
+            <div class="work-box" id="work6">
+              <h4>
+                Affiliate Marketing Strategy Optimization for a SaaS Company
+              </h4>
+              <p class="goal">
+                <strong>Goal:</strong> Increase monthly subscriptions and reduce
+                acquisition costs.
+              </p>
+              <p class="achievement">
+                <strong>Achievement:</strong> Developed a Google Display ad
+                strategy that boosted monthly subscriptions by 25% while
+                lowering costs by 15%.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- See Later Button -->
+        <div class="see-later" style="display: none">
+          <button class="btn btn-dark" id="seeLaterBtn">See Later</button>
+        </div>
+
+        <!-- Hidden Line 3 of 3 Boxes -->
+        <div class="more-works" id="line3">
+          <div class="portfolio-container">
+            <div class="work-box" id="work7">
+              <h4>Content Marketing Campaign for a Local Restaurant</h4>
+              <p class="goal">
+                <strong>Goal:</strong> Increase daily reservations.
+              </p>
+              <p class="achievement">
+                <strong>Achievement:</strong> Designed an engaging content
+                strategy on Instagram and Facebook, increasing reservations by
+                40% in one month.
+              </p>
+            </div>
+
+            <div class="work-box" id="work8">
+              <h4>Marketing Campaign for a New Mobile App</h4>
+              <p class="goal">
+                <strong>Goal:</strong> Achieve 10,000 downloads in the first
+                month.
+              </p>
+              <p class="achievement">
+                <strong>Achievement:</strong> Managed a Google App Campaign and
+                TikTok Ads that delivered over 15,000 downloads in three weeks.
+              </p>
+            </div>
+
+            <div class="work-box" id="work9">
+              <h4>Retargeting Campaign for a Global Brand</h4>
+              <p class="goal">
+                <strong>Goal:</strong> Increase conversion rates from potential
+                customers.
+              </p>
+              <p class="achievement">
+                <strong>Achievement:</strong> Managed retargeting campaigns on
+                multiple platforms (Google Display and Meta Ads), achieving a
+                45% boost in conversions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="see-more">
+          <button id="seeMoreBtn" class="btn btn-dark">See More</button>
+        </div>
+      </div>
+    </div>
+    <div class="about-section" id="about">
+      <div class="about-container" id="aboutMe">
+        <h2>About Me</h2>
+        <p>
+          I'm Mohamed, a certified expert in digital marketing with credentials
+          from Google and Illinois University.
+        </p>
+        <p>
+          With exceptional experience managing paid advertisements on platforms
+          like Google Ads and Meta Ads (Facebook & Instagram), I excel in data
+          analysis and performance optimization to achieve optimal results.
+        </p>
+
+        <ul>
+          <li>
+            <i class="fas fa-calendar-day"></i
+            ><strong>Year of Birth:</strong> 2002
+          </li>
+          <li>
+            <i class="fas fa-phone-alt"></i
+            ><strong>Phone:</strong> +201203471749
+          </li>
+          <li>
+            <i class="fas fa-certificate"></i><strong>Certifications:</strong>
+            <ul>
+              <li>Google Digital Marketing Certificate</li>
+              <li>
+                Specialized certifications in marketing strategies from Illinois
+                University
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2>Contact</h2>
+        <p>Interested in working with me or learning more? Get in touch!</p>
+        <ul class="contact-details">
+          <li>
+            <i class="fas fa-phone-alt"></i
+            ><strong>Phone:</strong> +201203471749
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i
+            ><strong>Email:</strong> mnassef412@gmail.com
+          </li>
+        </ul>
+        <a href="mailto:mnassef412@gmail.com" class="contact-btn">Send Email</a>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
