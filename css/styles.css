@@ -93,7 +93,7 @@ header nav{
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(img/home.webp);
+  background-image: url(img/home.png);
   background-size: cover;
   & .main-container {
     display: flex;
